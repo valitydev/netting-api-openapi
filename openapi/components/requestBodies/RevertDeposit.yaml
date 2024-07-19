@@ -1,0 +1,9 @@
+type: object
+required:
+  - depositId
+  - revertParams
+properties:
+  depositId:
+    type: string
+  revertParams:
+    $ref: ../schemas/RevertParams.yaml

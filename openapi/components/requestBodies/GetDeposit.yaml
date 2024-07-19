@@ -1,0 +1,9 @@
+type: object
+required:
+  - depositId
+  - eventRange
+properties:
+  depositId:
+    type: string
+  eventRange:
+    $ref: ../schemas/EventRange.yaml

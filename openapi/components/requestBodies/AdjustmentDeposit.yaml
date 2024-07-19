@@ -1,0 +1,9 @@
+type: object
+required:
+  - depositId
+  - adjustmentParams
+properties:
+  depositId:
+    type: string
+  adjustmentParams:
+    $ref: ../schemas/AdjustmentParams.yaml

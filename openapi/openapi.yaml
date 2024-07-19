@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Netting API
+  description: Прокси для бэкофиса к сервисам процессинга, повторяет протоколы процессинга
+  termsOfService: https://empayre.com/terms-of-use/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  - url: 'https://{subdomain}.empayre.com/{version}'
+    variables:
+      subdomain:
+        default: api
+      version:
+        enum:
+          - v1
+        default: v1
+security:
+  - bearer: []
+paths:
+  '/fistful/deposit/create':
+    $ref: './paths/create-deposit.yaml'
+  '/fistful/deposit/revert':
+    $ref:  './paths/revert-deposit.yaml'
+  '/fistful/deposit/adjustment/create':
+    $ref:  './paths/adjustment-deposit.yaml'
+  '/fistful/deposit/adjustment/revert':
+    $ref:  './paths/revert-adjustment-deposit.yaml'
+  '/fistful/deposit/get':
+    $ref: './paths/get-deposit.yaml'
+  '/shumway/hold':
+    $ref:  './paths/hold-balance.yaml'
+  '/shumway/commit-plan':
+    $ref:  './paths/commit-plan.yaml'
+  '/shumway/rollback-plan':
+    $ref:  './paths/rollback-plan.yaml'
+
+components:
+  securitySchemes:
+    bearer:
+      $ref: './components/security-schemes/Bearer.yaml'

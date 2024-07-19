@@ -1,0 +1,11 @@
+type: object
+required:
+  - planId
+  - postingBatch
+properties:
+  planId:
+    type: string
+  postingBatch:
+    type: array
+    items:
+      $ref: ../schemas/PostingBatch.yaml

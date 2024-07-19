@@ -1,0 +1,7 @@
+type: object
+required:
+  - affectedAccounts
+properties:
+  affectedAccounts:
+    type: object
+    $ref: ../schemas/AffectedAccounts.yaml

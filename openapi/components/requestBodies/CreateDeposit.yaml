@@ -1,0 +1,19 @@
+type: object
+required:
+  - depositId
+  - walletId
+  - sourceId
+  - cash
+properties:
+  depositId:
+    type: string
+  walletId:
+    type: string
+  sourceId:
+    type: string
+  cash:
+    $ref: ../schemas/Cash.yaml
+  externalId:
+    type: string
+  description:
+    type: string

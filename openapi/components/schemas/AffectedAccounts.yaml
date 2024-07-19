@@ -1,0 +1,9 @@
+type: object
+required:
+  - accountId
+  - account
+properties:
+  accountId:
+    type: string
+  account:
+    $ref: ../schemas/ShumwayAccount.yaml

@@ -1,0 +1,21 @@
+type: object
+required:
+  - status
+properties:
+  status:
+    description: Статус депозита
+    type: string
+    enum:
+      - pending
+      - succeeded
+      - failed
+  error:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: string
+      message:
+        type: string

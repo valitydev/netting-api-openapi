@@ -1,0 +1,25 @@
+post:
+  operationId: revertDeposit
+  summary: Отмена депозита
+  tags:
+    - fisful-deposit
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/requestBodies/RevertDeposit.yaml
+  responses:
+    '200':
+      description: Получено состтояние реверта депозита
+      content:
+        application/json:
+          schema:
+            $ref: ../components/responses/RevertState.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
+    '409':
+      $ref: ../components/responses/Conflict.yaml

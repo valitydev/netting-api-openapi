@@ -1,0 +1,29 @@
+type: object
+required:
+  - depositId
+  - walletId
+  - sourceId
+  - cash
+properties:
+  depositId:
+    type: string
+  walletId:
+    type: string
+  sourceId:
+    type: string
+  cash:
+    $ref: ../schemas/Cash.yaml
+  status:
+    $ref: ../schemas/DepositStatus.yaml
+  externalId:
+    type: string
+  createdAt:
+    type: string
+  domainRevision:
+    type: integer
+    format: int64
+  partyRevision:
+    type: integer
+    format: int64
+  description:
+    type: string

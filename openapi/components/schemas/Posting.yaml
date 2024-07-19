@@ -1,0 +1,19 @@
+type: object
+required:
+  - fromId
+  - toId
+  - amount
+  - currencySymbolicCode
+  - description
+properties:
+  fromId:
+    type: string
+  toId:
+    type: string
+  amount:
+    type: integer
+    format: int64
+  currencySymbolicCode:
+    $ref: ../schemas/DepositStatus.yaml
+  description:
+    type: string
