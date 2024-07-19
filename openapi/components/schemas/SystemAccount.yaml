@@ -1,0 +1,9 @@
+type: object
+required:
+  - system
+properties:
+  system:
+    type: string
+    enum:
+      - settlement
+      - subagent

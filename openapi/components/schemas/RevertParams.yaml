@@ -1,0 +1,13 @@
+type: object
+required:
+  - revertId
+  - cash
+properties:
+  revertId:
+    type: string
+  cash:
+    $ref: ../schemas/Cash.yaml
+  externalId:
+    type: string
+  reason:
+    type: string

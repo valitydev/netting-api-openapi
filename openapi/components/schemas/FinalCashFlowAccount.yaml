@@ -1,0 +1,8 @@
+type: object
+required:
+  - accountType
+properties:
+  accountType:
+    $ref: ../schemas/CashFlowAccount.yaml
+  account:
+    $ref: ../schemas/FistfulAccount.yaml

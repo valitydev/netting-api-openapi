@@ -1,0 +1,15 @@
+type: object
+required:
+  - accountId
+  - identityId
+  - currencySymbolicCode
+  - accounterAccountId
+properties:
+  accountId:
+    type: string
+  identityId:
+    type: string
+  currencySymbolicCode:
+    $ref: ../schemas/DepositStatus.yaml
+  accounterAccountId:
+    type: string

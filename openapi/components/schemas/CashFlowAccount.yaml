@@ -1,0 +1,9 @@
+type: object
+properties:
+  account:
+    anyOf:
+      - $ref: ../schemas/MerchantAccount.yaml
+      - $ref: ../schemas/ProviderAccount.yaml
+      - $ref: ../schemas/SystemAccount.yaml
+      - $ref: ../schemas/ExternalAccount..yaml
+      - $ref: ../schemas/WalletAccount.yaml

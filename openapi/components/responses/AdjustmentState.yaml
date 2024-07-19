@@ -1,0 +1,28 @@
+type: object
+required:
+  - adjustmentId
+  - status
+  - changesPlan
+  - createdAt
+  - domainRevision
+  - partyRevision
+  - operationTimestamp
+properties:
+  adjustmentId:
+    type: string
+  status:
+    $ref: ../schemas/DepositStatus.yaml
+  changesPlan:
+    $ref: ../schemas/ChangesPlan.yaml
+  createdAt:
+    type: string
+  domainRevision:
+    type: integer
+    format: int64
+  partyRevision:
+    type: integer
+    format: int64
+  externalId:
+    type: string
+  operationTimestamp:
+    type: string

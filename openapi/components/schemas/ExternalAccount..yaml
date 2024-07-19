@@ -1,0 +1,9 @@
+type: object
+required:
+  - external
+properties:
+  external:
+    type: string
+    enum:
+      - income
+      - outcome

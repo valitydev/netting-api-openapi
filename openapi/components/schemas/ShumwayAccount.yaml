@@ -1,0 +1,25 @@
+type: object
+required:
+  - accountId
+  - ownAmount
+  - maxAvailableAmount
+  - minAvailableAmount
+  - currencySymbolicCode
+properties:
+  accountId:
+    type: string
+  ownAmount:
+    type: integer
+    format: int64
+  maxAvailableAmount:
+    type: integer
+    format: int64
+  minAvailableAmount:
+    type: integer
+    format: int64
+  currencySymbolicCode:
+    $ref: ../schemas/Currency.yaml
+  description:
+    type: string
+  creationTime:
+    type: string

@@ -1,0 +1,11 @@
+type: object
+required:
+  - batchId
+  - postings
+properties:
+  batchId:
+    type: string
+  postings:
+    type: array
+    items:
+      $ref: ../schemas/Posting.yaml

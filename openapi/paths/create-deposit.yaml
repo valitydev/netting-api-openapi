@@ -1,0 +1,25 @@
+post:
+  operationId: createDeposit
+  summary: Создать депозит
+  tags:
+    - fisful-deposit
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/requestBodies/CreateDeposit.yaml
+  responses:
+    '200':
+      description: Получено состояние депозита
+      content:
+        application/json:
+          schema:
+            $ref: ../components/responses/DepositState.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '404' :
+      $ref: ../components/responses/NotFound.yaml
+    '409':
+      $ref: ../components/responses/Conflict.yaml

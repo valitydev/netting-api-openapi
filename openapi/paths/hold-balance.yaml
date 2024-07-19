@@ -1,0 +1,21 @@
+post:
+  operationId: holdBalance
+  summary: Холдирование баланса в магазине
+  tags:
+    - shumway
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/requestBodies/PostingPlanChange.yaml
+  responses:
+    '200':
+      description: Получен план проводок
+      content:
+        application/json:
+          schema:
+            $ref: ../components/responses/PostingPlanLog.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml

@@ -1,0 +1,8 @@
+type: object
+required:
+  - postings
+properties:
+  postings:
+    type: array
+    items:
+      $ref: ../schemas/FinalCashFlowPosting.yaml

@@ -1,0 +1,14 @@
+type: object
+required:
+  - source
+  - destination
+  - cash
+properties:
+  source:
+    $ref: ../schemas/FinalCashFlowAccount.yaml
+  destination:
+    $ref: ../schemas/FinalCashFlowAccount.yaml
+  cash:
+    $ref: ../schemas/Cash.yaml
+  details:
+    type: string

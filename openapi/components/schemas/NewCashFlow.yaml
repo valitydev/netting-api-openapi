@@ -1,0 +1,9 @@
+type: object
+required:
+  - oldCashFlowInverted
+  - newCashFlow
+properties:
+  oldCashFlowInverted:
+    $ref: ../schemas/FinalCashFlow.yaml
+  newCashFlow:
+    $ref: ../schemas/FinalCashFlow.yaml

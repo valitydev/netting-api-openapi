@@ -1,0 +1,6 @@
+type: object
+properties:
+  newCashFlow:
+    $ref: ../schemas/NewCashFlow.yaml
+  newStatus:
+    $ref: ../schemas/DepositStatus.yaml

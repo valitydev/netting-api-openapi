@@ -1,0 +1,11 @@
+type: object
+required:
+  - adjustmentId
+  - taregetStatus
+properties:
+  revertId:
+    type: string
+  taregetStatus:
+    $ref: ../schemas/DepositStatus.yaml
+  externalId:
+    type: string

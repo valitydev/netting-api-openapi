@@ -1,0 +1,21 @@
+post:
+  operationId: rollbackPlan
+  summary: Отмена проводок списания с баланса
+  tags:
+    - shumway
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/requestBodies/PostingPlan.yaml
+  responses:
+    '200':
+      description: Получено новое состояние счетов
+      content:
+        application/json:
+          schema:
+            $ref: ../components/responses/PostingPlanLog.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
